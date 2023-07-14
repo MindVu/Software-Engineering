@@ -1,9 +1,5 @@
 # Hướng dẫn sử dụng
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
 Sau khi tải về, tạo một react application mới bằng cách:
 ### `npx create-react-app ./`
 
@@ -13,7 +9,7 @@ Tải Bootstrap:
 ### `npm install react-bootstrap bootstrap`
 
 Tải MDBootstrap:
-Làm các bước trong link sau: [https://mdbootstrap.com/docs/react/getting-started/installation/]
+Làm các bước trong link sau: https://mdbootstrap.com/docs/react/getting-started/installation/
 
 Chạy chương trình:
 ### `npm start`
