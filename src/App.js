@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import { Container } from "react-bootstrap";
+import Header from "./routes/Header";
+import Footer from "./routes/Footer";
+import LogIn from "./routes/LogIn";
+import Register from "./routes/Register";
+import "./css/style.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Header />}></Route>
+        <Route path="/login" element={<></>}></Route>
+        <Route path="/register" element={<></>}></Route>
+      </Routes>
+      <Container
+        className="d-flex justify-content-center"
+        style={{ minHeight: "80vh", width: "60vw" }}
+      >
+        <Routes>
+          <Route path="/" element={<>Home</>}></Route>
+          <Route path="/login" element={<LogIn />}></Route>
+          <Route path="/register" element={<Register />}></Route>
+        </Routes>
+      </Container>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

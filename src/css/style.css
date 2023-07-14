@@ -1,0 +1,92 @@
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #f6d365;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+}
+
+.form-check-input:checked {
+    background-color: #e1ac00 !important;
+    border-color: #e1ac00 !important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #e1ac00;
+  }
+ 
+
+.mb-3 {
+    color: #e1ac00 !important;
+}
+
+.me-2 {
+    color: #e1ac00 !important;
+}
+
+.navbar .nav-link {
+    color: white !important;
+}
+
+.navbar {
+    transition: 0.5s;
+    /* background-color: black !important; */
+}
+
+.navbar-scrolled {
+    background-color: #000 !important;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: #e1ac00 !important;
+}
+
+.btn-primary:hover {
+    background-color: #201a06 !important;
+}
+input:focus:not([readonly]) + label {
+    color: #e1ac00 !important; 
+    border-color: #e1ac00 !important;
+}
+textarea:focus:not([readonly]) + label {
+    color: #e1ac00 !important; 
+    border-color: #e1ac00 !important;
+}
+/* .form-outline .form-control:focus~.form-notch .form-notch-leading {
+    border-top: .125rem solid black;
+    border-bottom: .125rem solid #000;
+    border-left: .125rem solid #000;
+} 
+
+ .form-outline .form-control:focus~.form-notch .form-notch-trailing {
+    border-top: .125rem solid #000;
+    border-right: .125rem solid #000;
+    border-bottom: .125rem solid #000;
+} 
+
+ .form-outline .form-control:focus~.form-notch .form-notch-middle {
+    border-top: 0;
+    border-bottom: .125rem solid #000;
+}  */
+li {
+    list-style-type: none;
+}
+.other-inp:focus {
+    border: .125rem solid black !important;
+    box-shadow: inset 0 0 0 0 black !important;
+}
+.table td, tr {
+    text-align: auto;
+    }
+.show>.dropdown-menu {
+  display: block;
+  position: absolute;
+}
+.nav-link a{
+    color: white !important;
+}

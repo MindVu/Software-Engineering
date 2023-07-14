@@ -1,0 +1,444 @@
+<div>
+    <meta charSet="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+    <title>EVENTIST</title>
+    {/* Font Awesome */}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    {/* Google Fonts Roboto */}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    {/* MDB */}
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    {/* Custom styles */}
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    {/*Main Navigation*/}
+    <header>
+        <style
+            dangerouslySetInnerHTML={{__html: "\n      /* Carousel styling */\n      #introCarousel,\n      .carousel-inner,\n      .carousel-item,\n      .carousel-item.active {\n        height: 100vh;\n      }\n\n      .carousel-item:nth-child(1) {\n        background-image: url('img/carousel1.png');\n        background-size: cover;\n        background-position: center center;\n      }\n\n      .carousel-item:nth-child(2) {\n        background-image: url('img/carousel2.jpeg');\n        background-repeat: no-repeat;\n        background-size: cover;\n        background-position: center center;\n      }\n\n      .carousel-item:nth-child(3) {\n        background-image: url('img/carousel3.jpeg');\n        background-repeat: no-repeat;\n        background-size: cover;\n        background-position: center center;\n      }\n\n      /* Height for devices larger than 576px */\n      @media (min-width: 992px) {\n        #introCarousel {\n          margin-top: -58.59px;\n        }\n\n        #introCarousel,\n        .carousel-inner,\n        .carousel-item,\n        .carousel-item.active {\n          height: 50vh;\n        }\n      }\n    "
+            }} />
+        {/* Navbar */}
+        <nav className="navbar navbar-expand-lg d-lg-block fixed-top navbar-scrolled">
+            <div className="container-fluid">
+                {/* Navbar brand */}
+                <a className="navbar-brand nav-link" href="#page-top">
+                    <img src="img/white-logo.png" height={20} />
+                </a>
+                <button className="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
+                    aria-label="Toggle navigation" style={{color: 'white' }}>
+                    <i className="fas fa-bars" />
+                </button>
+                <div className="collapse navbar-collapse" id="navbarExample01">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li className="nav-item">
+                            <a className="nav-link" aria-current="page" href="#intro">Home</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#" rel="nofollow">About us</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="manage-event.html">Our service</a>
+                        </li>
+                    </ul>
+                    {/* Avatar */}
+                    <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                            id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
+                                className="rounded-circle" height={25} alt="Portrait of a Woman" loading="lazy" />
+                        </a>
+                        <ul className="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li>
+                                <a className="dropdown-item" href="#">My profile</a>
+                            </li>
+                            <li>
+                                <a className="dropdown-item" href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a className="dropdown-item" href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </nav>
+        {/* Navbar */}
+        {/* Carousel wrapper */}
+        <div id="introCarousel" className="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+            {/* Indicators */}
+            <ol className="carousel-indicators">
+                <li data-mdb-target="#introCarousel" data-mdb-slide-to={0} className="active" />
+                <li data-mdb-target="#introCarousel" data-mdb-slide-to={1} />
+                <li data-mdb-target="#introCarousel" data-mdb-slide-to={2} />
+            </ol>
+            {/* Inner */}
+            <div className="carousel-inner">
+                {/* Single item */}
+                <div className="carousel-item active">
+                    <div className="mask" style={{backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
+                        <div className="d-flex justify-content-center align-items-center h-100">
+                            <div className="text-white text-center">
+                                <h1 className="mb-2">Create your event with EVENTIST!</h1>
+                                <h5 className="mb-4">Experience Perfection in Every Detail</h5>
+                                <a className="btn btn-outline-light btn-lg m-2" href="#" role="button" rel="nofollow"
+                                    target="_blank">Start
+                                    now</a>
+                                <a className="btn btn-outline-light btn-lg m-2" href="#" target="_blank"
+                                    role="button">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* Single item */}
+                <div className="carousel-item">
+                    <div className="mask" style={{backgroundColor: 'rgba(0, 0, 0, 0.3)' }}>
+                        <div className="d-flex justify-content-center align-items-center h-100">
+                            <div className="text-white text-center">
+                                <figure>
+                                    <blockquote className="blockquote mb-4">
+                                        <p>
+                                            <i className="fas fa-quote-left fa-lg text-warning me-2" />
+                                            <span className="font-italic">EVENTIST helped us create an unparalled event,
+                                                exceeded every
+                                                expectations, amazing services!</span>
+                                        </p>
+                                    </blockquote>
+                                    <figcaption className="blockquote-footer" style={{color: 'white' }}>
+                                        Hong Hai Do <cite title="Source Title">BKD</cite>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* Single item */}
+                <div className="carousel-item">
+                    <div className="mask" style={{background: 'linear-gradient(
+            45deg,
+            rgba(56, 50, 1, 0.7),
+            rgba(214, 161, 14, 0.7) 100%
+          )' }}>
+                        <div className="d-flex justify-content-center align-items-center h-100">
+                            <div className="text-white text-center">
+                                <h2>Want to become part of EVENTIST?</h2>
+                                <a className="btn btn-outline-light btn-lg m-2" href="#" target="_blank"
+                                    role="button">Join us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* Inner */}
+            {/* Controls */}
+            <a className="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true" />
+                <span className="sr-only">Previous</span>
+            </a>
+            <a className="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true" />
+                <span className="sr-only">Next</span>
+            </a>
+        </div>
+        {/* Carousel wrapper */}
+    </header>
+    {/*Main Navigation*/}
+    {/*Main layout*/}
+    <main className="mt-5">
+        <div className="container">
+            {/*Section: Content*/}
+            <section>
+                <div className="row">
+                    <div className="col-md-6 gx-5 mb-4">
+                        <div className="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+                            <img src="img/logo-img.png" className="img-fluid" />
+                            <a href="#!">
+                                <div className="mask" style={{backgroundColor: 'rgba(251, 251, 251, 0.15)' }} />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-md-6 gx-5 mb-4">
+                        <h4><strong>Your Vision, Our Expertise</strong></h4>
+                        <p className="text-muted">
+                            At EVENTIST, we believe that every event is an opportunity to bring your vision to life. We
+                            understand
+                            that each client has a unique vision and set of expectations, and that's where our expertise
+                            comes in.
+                            With years of experience in event organizing, we have honed our skills to transform your
+                            ideas into
+                            extraordinary experiences. Our dedicated team of professionals works tirelessly to ensure
+                            that every
+                            detail is flawlessly executed, from conceptualization to execution. Whether it's a corporate
+                            conference, a
+                            grand wedding, or a special celebration, we are committed to turning your vision into a
+                            reality. At
+                            EVENTIST, your dreams take center stage, and our expertise is the guiding force that brings
+                            them to life.
+                            We pride ourselves on our personalized approach, taking the time to truly understand your
+                            needs and
+                            objectives. Our team of creative minds collaborates closely with you to design a customized
+                            event that
+                            reflects your style, values, and brand. From innovative themes and breathtaking decor to
+                            seamless
+                            logistics and top-notch entertainment, we leave no stone unturned in delivering an
+                            unforgettable
+                            experience for you and your guests. With EVENTIST, your event will not only meet your
+                            expectations but
+                            surpass them, leaving a lasting impression on everyone in attendance.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            {/*Section: Content*/}
+            <hr className="my-5" />
+            {/*Section: Content*/}
+            <section className="text-center">
+                <h4 className="mb-5"><strong>Our steps for crafting an amazing event for you and your brand</strong>
+                </h4>
+                <div className="row">
+                    <div className="col-lg-4 col-md-12 mb-4">
+                        <div className="card">
+                            <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                                <img src="img/planning.jpeg" className="img-fluid" style={{height: 200, width: 300}} />
+                                <a href="#!">
+                                    <div className="mask" style={{backgroundColor: 'rgba(251, 251, 251, 0.15)' }} />
+                                </a>
+                            </div>
+                            <div className="card-body">
+                                <h5 className="card-title">Planning &amp; Designing</h5>
+                                <p className="card-text">
+                                    Our Events &amp; Production team then works in collaboration with you to customised
+                                    your event and bring
+                                    the idea to life.
+                                </p>
+                                <a href="#!" className="btn btn-primary">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 mb-4">
+                        <div className="card">
+                            <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                                <img src="img/execution.jpeg" className="img-fluid" style={{height: 200}} />
+                                <a href="#!">
+                                    <div className="mask" style={{backgroundColor: 'rgba(251, 251, 251, 0.15)' }} />
+                                </a>
+                            </div>
+                            <div className="card-body">
+                                <h5 className="card-title">Event Execution</h5>
+                                <p className="card-text">
+                                    Our team will engage our curated suppliers and specialists to craft your project. We
+                                    work on-site to
+                                    ensure flawless delivery for every job.
+                                </p>
+                                <a href="#!" className="btn btn-primary">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 mb-4">
+                        <div className="card">
+                            <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                                <img src="img/evaluation.jpeg" className="img-fluid" style={{height: 200}} />
+                                <a href="#!">
+                                    <div className="mask" style={{backgroundColor: 'rgba(251, 251, 251, 0.15)' }} />
+                                </a>
+                            </div>
+                            <div className="card-body">
+                                <h5 className="card-title">Event Evaluation</h5>
+                                <p className="card-text">
+                                    We assess results &amp; contribution to your business goals so you can have a
+                                    thorough understanding of
+                                    the event outcome.
+                                </p>
+                                <a href="#!" className="btn btn-primary">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/*Section: Content*/}
+            <hr className="my-5" />
+            {/*Section: Content*/}
+            <section className="mb-5">
+                <h4 className="mb-5 text-center"><strong>Ready to get your event started? Log in now and let’s get you
+                        on
+                        track.</strong></h4>
+                {/* Pills navs */}
+                <ul className="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                    <li className="nav-item" role="presentation">
+                        <a className="nav-link active pill" id="tab-login" data-mdb-toggle="pill" href="#pills-login"
+                            role="tab" aria-controls="pills-login" aria-selected="true">Login</a>
+                    </li>
+                    <li className="nav-item" role="presentation">
+                        <a className="nav-link pill" id="tab-register" data-mdb-toggle="pill" href="#pills-register"
+                            role="tab" aria-controls="pills-register" aria-selected="false">Register</a>
+                    </li>
+                </ul>
+                {/* Pills navs */}
+                {/* Pills content */}
+                <div className="tab-content">
+                    <div className="tab-pane fade show active" id="pills-login" role="tabpanel"
+                        aria-labelledby="tab-login">
+                        <form>
+                            {/* Email input */}
+                            <div className="form-outline mb-4">
+                                <input type="email" id="loginName" className="form-control" />
+                                <label className="form-label" htmlFor="loginName">Email or username</label>
+                            </div>
+                            {/* Password input */}
+                            <div className="form-outline mb-4">
+                                <input type="password" id="loginPassword" className="form-control" />
+                                <label className="form-label" htmlFor="loginPassword">Password</label>
+                            </div>
+                            {/* 2 column grid layout */}
+                            <div className="row mb-4">
+                                <div className="col-md-6 d-flex justify-content-center">
+                                    {/* Checkbox */}
+                                    <div className="form-check mb-3 mb-md-0">
+                                        <input className="form-check-input" type="checkbox" defaultValue id="loginCheck"
+                                            defaultChecked />
+                                        <label className="form-check-label" htmlFor="loginCheck"> Remember me </label>
+                                    </div>
+                                </div>
+                                <div className="col-md-6 d-flex justify-content-center">
+                                    {/* Simple link */}
+                                    <a href="#!" style={{color: '#e1ac00' }}>Forgot password?</a>
+                                </div>
+                            </div>
+                            {/* Submit button */}
+                            <button type="submit" className="btn btn-primary btn-block mb-4">Sign in</button>
+                            {/* Register buttons */}
+                            <div className="text-center">
+                                <p>Not a member? <a href="#!" style={{color: '#e1ac00' }}>Register</a></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div className="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+                        <form>
+                            {/* Name input */}
+                            <div className="form-outline mb-4">
+                                <input type="text" id="registerName" className="form-control" />
+                                <label className="form-label" htmlFor="registerName">Name</label>
+                            </div>
+                            {/* Username input */}
+                            <div className="form-outline mb-4">
+                                <input type="text" id="registerUsername" className="form-control" />
+                                <label className="form-label" htmlFor="registerUsername">Username</label>
+                            </div>
+                            {/* Email input */}
+                            <div className="form-outline mb-4">
+                                <input type="email" id="registerEmail" className="form-control" />
+                                <label className="form-label" htmlFor="registerEmail">Email</label>
+                            </div>
+                            {/* Password input */}
+                            <div className="form-outline mb-4">
+                                <input type="password" id="registerPassword" className="form-control" />
+                                <label className="form-label" htmlFor="registerPassword">Password</label>
+                            </div>
+                            {/* Repeat Password input */}
+                            <div className="form-outline mb-4">
+                                <input type="password" id="registerRepeatPassword" className="form-control" />
+                                <label className="form-label" htmlFor="registerRepeatPassword">Repeat password</label>
+                            </div>
+                            {/* Checkbox */}
+                            <div className="form-check d-flex justify-content-center mb-4">
+                                <input className="form-check-input me-2" type="checkbox" defaultValue id="registerCheck"
+                                    defaultChecked aria-describedby="registerCheckHelpText" />
+                                <label className="form-check-label" htmlFor="registerCheck">
+                                    I have read and agree to the terms
+                                </label>
+                            </div>
+                            {/* Submit button */}
+                            <button type="submit" className="btn btn-primary btn-block mb-4">Sign in</button>
+                        </form>
+                    </div>
+                </div>
+                {/* Pills content */}
+            </section>
+            {/*Section: Content*/}
+        </div>
+    </main>
+    {/*Main layout*/}
+    {/* Footer */}
+    <footer className="text-center text-lg-start bg-light text-muted">
+        {/* Section: Social media */}
+        <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            {/* Left */}
+            <div className="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            {/* Left */}
+            {/* Right */}
+            <div>
+                <a href className="me-4 text-reset">
+                    <i className="fab fa-facebook-f" />
+                </a>
+                <a href className="me-4 text-reset">
+                    <i className="fab fa-instagram" />
+                </a>
+                <a href className="me-4 text-reset">
+                    <i className="fab fa-github" />
+                </a>
+            </div>
+            {/* Right */}
+        </section>
+        {/* Section: Social media */}
+        {/* Section: Links */}
+        <section className>
+            <div className="container text-center text-md-start mt-5">
+                {/* Grid row */}
+                <div className="row mt-3">
+                    {/* Grid column */}
+                    <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        {/* Content */}
+                        <h6 className="text-uppercase fw-bold mb-4">
+                            <i className="fas fa-gem me-3" />EVENTIST
+                        </h6>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.63405188562!2d105.8400740405727!3d21.007301388594147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac71294bf0ab%3A0xc7e2d20e5e04a9da!2zxJDhuqFpIEjhu41jIELDoWNoIEtob2EgSMOgIE7hu5lp!5e0!3m2!1svi!2s!4v1684388459812!5m2!1svi!2s"
+                            width={400} height={300} style={{border: 0}} allowFullScreen loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade" />
+                    </div>
+                    {/* Grid column */}
+                    {/* Grid column */}
+                    <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style={{paddingLeft: '2cm' }}>
+                        {/* Links */}
+                        <h6 className="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" className="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                            <a href="#!" className="text-reset">About</a>
+                        </p>
+                        <p>
+                            <a href="#!" className="text-reset">Service</a>
+                        </p>
+                        <p>
+                            <a href="#!" className="text-reset">Help</a>
+                        </p>
+                    </div>
+                    {/* Grid column */}
+                    {/* Grid column */}
+                    <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        {/* Links */}
+                        <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i className="fas fa-home me-3" /> Hanoi, HN 10000, VN</p>
+                        <p>
+                            <i className="fas fa-envelope me-3" />
+                            contact@evt.com.vn
+                        </p>
+                        <p><i className="fas fa-phone me-3" /> + 84 889 1311 03</p>
+                    </div>
+                    {/* Grid column */}
+                </div>
+                {/* Grid row */}
+            </div>
+        </section>
+        {/* Section: Links */}
+    </footer>
+    {/* Footer */}
+    {/* MDB */}
+    {/* Custom scripts */}
+</div>
